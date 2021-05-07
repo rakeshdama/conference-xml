@@ -6,7 +6,7 @@
     <bean name="speakerRepository"
           class="repository.SpeakerRepositoryImpl" />
 
-    <bean name="speakerService" class="service.SpeakerServiceImpl" autowire="constructor">
+    <bean name="speakerService" class="service.SpeakerServiceImpl" autowire="byType">
         <!--<constructor-arg index="0" ref="speakerRepository" />-->
     </bean>
 </beans>
